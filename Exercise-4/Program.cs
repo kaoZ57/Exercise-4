@@ -10,6 +10,8 @@ namespace Exercise_4
     {
         static void Main(string[] args)
         {
+            Box box = new Box(4, 5, 10);
+            Console.WriteLine("box area is : ", box.area());
         }
     }
 }
