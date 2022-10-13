@@ -10,8 +10,15 @@ namespace Exercise_4
     {
         static void Main(string[] args)
         {
-            Box box = new Box(4, 5, 10);
-            Console.WriteLine("box area is : ", box.area());
+            Box box0 = new Box(width: 4, height: 5, length: 10);
+            Console.WriteLine("box0 area is : {0}", box0.area());
+
+            Box box1 = new Box(side: 5);
+            Console.WriteLine("box1 area is : {0}", box1.area());
+
+            Box box2 = new Box(oldBox: box0);
+            Console.WriteLine("box2 area is : {0}", box2.area());
+
         }
     }
 }
